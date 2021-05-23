@@ -18,23 +18,3 @@ const ingredient = ingredients.map( el => {
 });
 
 ingredientsList.append(...ingredient);
-
-
-
-
-
-//  ingredients.forEach(ing => {
-//    const ingredient = document.createElement('li');
-//    ingredient.textContent = ing;
-//    ingredientsList.appendChild(ingredient);
-//  })
-
-
-
-// for (let i = 0; i < ingredients.length; i += 1) {
-//   const ingredient = document.createElement('li');
-//   ingredient.textContent = ingredients[i];
-//   ingredientsList.appendChild(ingredient);
-// }
-
-

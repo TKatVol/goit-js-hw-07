@@ -20,8 +20,8 @@ const images = [
 const gallery = document.querySelector('#gallery');
 gallery.classList.add('gallery-list');
 
-const galleryItem = images.map( ({url, alt}) => {
-    return `<li> <img src = "${url}" alt = "${alt}"></img></li>`
-})
+const galleryItem = images.map(({ url, alt }) => {
+  return `<li> <img src = "${url}" alt = "${alt}"></img></li>`
+});
 
 gallery.insertAdjacentHTML('afterbegin', galleryItem);
