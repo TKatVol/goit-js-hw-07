@@ -3,6 +3,13 @@ img {
   max-width: 100%;
 }
 
+li {
+  margin-left: 20px;
+  width: 340px;
+  height: 180px;
+  overflow: hidden;
+}
+
 .gallery-list {
   list-style: none;
   display: flex;

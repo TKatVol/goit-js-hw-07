@@ -16,12 +16,12 @@ function createBoxes(amount) {
   
     for (let i = 0; i < amount; i += 1) {
         const minWidth = 30;
-        const minHeigth = 30;
+        const minHeight = 30;
 
         const box = document.createElement('div');
         box.style.backgroundColor = '#' + (0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);
         box.style.width = minWidth + 10 * [i] +'px';
-        box.style.height = minHeigth + 10 * [i] + 'px';
+        box.style.height = minHeight + 10 * [i] + 'px';
         elements.push(box) ;
     }
   
@@ -29,6 +29,6 @@ function createBoxes(amount) {
 };
 
 function destroyBoxes() {
-    numberBoxes.value = 0;
+    numberBoxes.value = '';
     boxes.innerHTML = '';
 };
