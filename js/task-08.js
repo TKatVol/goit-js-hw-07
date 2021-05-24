@@ -29,5 +29,6 @@ function createBoxes(amount) {
 };
 
 function destroyBoxes() {
+    numberBoxes.value = 0;
     boxes.innerHTML = '';
 };

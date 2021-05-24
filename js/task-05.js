@@ -2,9 +2,10 @@ const nameInput = document.querySelector('#name-input');
 const nameOutput = document.querySelector('#name-output');
 
 nameInput.addEventListener('input', nameValue => {
-    nameOutput.textContent = nameValue.currentTarget.value;
+    const textName = nameValue.currentTarget.value;
+    nameOutput.textContent = textName.trim();
 
-    if (nameValue.currentTarget.value === '') {
+    if (textName === '') {
         nameOutput.textContent = 'незнакомец';
     }
 });
